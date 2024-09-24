@@ -6,12 +6,11 @@
 /*   By: mgagne <mgagne@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 17:27:35 by mgagne            #+#    #+#             */
-/*   Updated: 2024/09/24 21:39:09 by mgagne           ###   ########.fr       */
+/*   Updated: 2024/09/24 22:02:16 by mgagne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Array.hpp"
-#include <string>
 
 #define MAX_VAL 5
 

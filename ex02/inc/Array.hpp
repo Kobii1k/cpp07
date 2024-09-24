@@ -6,7 +6,7 @@
 /*   By: mgagne <mgagne@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 17:33:34 by mgagne            #+#    #+#             */
-/*   Updated: 2024/09/24 21:29:40 by mgagne           ###   ########.fr       */
+/*   Updated: 2024/09/24 22:00:59 by mgagne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,9 +71,9 @@
 	{
 		if (this->arr)
 			delete[] this->arr;
+
 		this->_size = copy._size;
 		this->arr = new T[copy._size];
-
 		for (unsigned int i = 0; i < copy._size; i++)
 		{
 			this->arr[i] = copy.arr[i];
@@ -88,11 +88,7 @@
 	Array<T>::Array(const unsigned int n)
 	{
 		this->_size = n;
-		this->arr = new T[n];
-		for (unsigned int i = 0; i < n; i++)
-		{
-			new (&this->arr[i]) T();
-		}
+		this->arr = new T[n]();
 	}
 
 	template<typename T>
